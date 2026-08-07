@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Para ti, mi amor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Work+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Barra de progreso discreta -->
+  <div class="progress-track" aria-hidden="true">
+    <div class="progress-fill" id="progressFill"></div>
+  </div>
+
+  <!-- PANTALLA 1 — Bienvenida -->
+  <section class="screen active" id="screen-1">
+    <div class="screen-inner">
+      <p class="eyebrow">para ti</p>
+      <h1 class="display">Hola mi amor</h1>
+      <p class="body-text">
+        Si estás acá es porque tuve bastante tiempo libre xd y estuve
+        refrescando un poco de HTML.
+      </p>
+      <div class="img-wrap img-small">
+        <img src="imagenes/mouse.png" alt="" loading="lazy">
+      </div>
+      <button class="btn btn-primary" data-next="2">Siguiente, guapa <span class="tulip">🌷</span></button>
+    </div>
+  </section>
+
+  <!-- PANTALLA 2 — Introducción -->
+  <section class="screen" id="screen-2">
+    <div class="screen-inner">
+      <p class="body-text lead">
+        Así que lo usaré para recordarte varias cosas muy importantes.
+      </p>
+      <div class="img-wrap img-small">
+        <img src="imagenes/perro.png" alt="" loading="lazy">
+      </div>
+      <button class="btn btn-primary" data-next="3">Continuar, preciosa <span class="tulip">🌷</span></button>
+    </div>
+  </section>
+
+  <!-- PANTALLA 3 — Primer contador y recuerdos -->
+  <section class="screen" id="screen-3">
+    <div class="screen-inner">
+      <p class="body-text">
+        Lo primero es recordar cómo comenzó todo, aunque aún me dé pena lo
+        poco ingenioso que fui para responderte la historia con ese
+        <em>"semana más larga"</em> (que estuve como media hora pensando
+        qué ponerle).
+      </p>
+
+      <div class="img-wrap img-medium">
+        <img src="imagenes/chat.jpeg" alt="" loading="lazy">
+      </div>
+
+      <p class="body-text">
+        Aunque me dé pena, me hace sentir feliz porque gracias a ese
+        penoso intento de sacar conversación, tengo este tiempo de
+        sentirme el hombre más afortunado del mundo.
+      </p>
+
+      <p class="counter-label">nos conocimos hace</p>
+      <div class="counter-card" id="counter1">
+        <div class="counter-row">
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="years">0</span>
+            <span class="counter-suffix">años</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="days">0</span>
+            <span class="counter-suffix">días</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="hours">0</span>
+            <span class="counter-suffix">horas</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="minutes">0</span>
+            <span class="counter-suffix">min</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="seconds">0</span>
+            <span class="counter-suffix">seg</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="body-text">
+        Otro recuerdo que me gustaría guardar en este HTML es la primera
+        vez que salimos — ya me fijé y la fecha exacta es lunes 2 de
+        febrero.
+      </p>
+
+      <div class="img-wrap img-medium">
+        <img src="imagenes/chat2.jpeg" alt="" loading="lazy">
+      </div>
+
+      <p class="body-text">
+        Y al igual que como te respondí la historia, un plan totalmente
+        random como salir a correr xd jajaja. Pero sabes amor, ese día
+        fue cuando me di cuenta de lo increíble que eres, cada palabra,
+        cada historia o cada dato random que me decía, me hacía ver lo
+        realmente interesante que eres.
+      </p>
+
+      <button class="btn btn-primary" data-next="4">Penúltima página, linda <span class="tulip">🌷</span></button>
+    </div>
+  </section>
+
+  <!-- PANTALLA 4 — Carta de amor -->
+  <section class="screen" id="screen-4">
+    <div class="screen-inner">
+      <p class="eyebrow">para vos</p>
+      <p class="body-text lead">
+        Podría continuar con muchísimos recuerdos bonitos que tenemos,
+        pero prefiero finalizar diciéndote lo maravillosa que eres,
+        además de siendo mi casi novia, una mujer que admiro, con
+        criterio propio, decidida, con sueños, metas, con un propósito
+        en la vida y sobre todo con un corazón lleno de amor. Te amo y
+        te amaré mil vidas más, mi amor.
+      </p>
+      <div class="img-wrap img-large">
+        <img src="imagenes/foto_carta.jpg" alt="" loading="lazy">
+      </div>
+      <button class="btn btn-primary" data-next="5">Última página, mi vida <span class="tulip">🌷</span></button>
+    </div>
+  </section>
+
+  <!-- PANTALLA 5 — Contador oficial -->
+  <section class="screen" id="screen-5">
+    <div class="screen-inner">
+      <p class="eyebrow">lo más importante</p>
+      <p class="body-text lead">
+        Esta página es muy importante, porque acá voy a generar un
+        contador con un botón de inicio que activaremos el día que
+        formalicemos la relación. Quiero que sea una forma de recordar
+        esa fecha tan importante para ambos.
+      </p>
+
+      <p class="counter-label" id="counter2-label">esperando ese día</p>
+      <div class="counter-card counter-card-hero" id="counter2">
+        <div class="counter-row">
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="years">0</span>
+            <span class="counter-suffix">años</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="days">0</span>
+            <span class="counter-suffix">días</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="hours">0</span>
+            <span class="counter-suffix">horas</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="minutes">0</span>
+            <span class="counter-suffix">min</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="counter-unit">
+            <span class="counter-num" data-unit="seconds">0</span>
+            <span class="counter-suffix">seg</span>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary btn-start" id="startBtn">Iniciar <span class="tulip">🌷</span></button>
+    </div>
+  </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
